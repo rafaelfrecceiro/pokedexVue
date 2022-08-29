@@ -6,8 +6,23 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
+      <style>
+          *{
+              margin: 0px;
+              padding: 0px;
+              box-sizing: border-box;
+          }
+      </style>
+      <script>
+          function scrolling(event){
+          //     if(event.type == 'scroll'){
+          //
+          //     }
+          }
+
+      </script>
   </head>
-  <body>
+  <body onscroll="scrolling(event)" id="body">
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
